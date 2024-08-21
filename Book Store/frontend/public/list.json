@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Let us C",
+        "author": "Yashwant Kanetkar",
+        "price": 0,
+        "category": "education",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 0,
+        "category": "fiction",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 3,
+        "name": "1984",
+        "author": "George Orwell",
+        "price": 0,
+        "category": "dystopian",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 4,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "price": 0,
+        "category": "classic",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "price": 6.99,
+        "category": "romance",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 6,
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "price": 9.99,
+        "category": "fiction",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 7,
+        "name": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "price": 11.99,
+        "category": "fantasy",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Moby Dick",
+        "author": "Herman Melville",
+        "price": 5.99,
+        "category": "classic",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 9,
+        "name": "The Alchemist",
+        "author": "Paulo Coelho",
+        "price": 12.99,
+        "category": "philosophy",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 10,
+        "name": "War and Peace",
+        "author": "Leo Tolstoy",
+        "price": 14.99,
+        "category": "historical",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    },
+    {
+        "id": 11,
+        "name": "The Catch-22",
+        "author": "Joseph Heller",
+        "price": 13.99,
+        "category": "satire",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599648837i/55281145.jpg"
+    }
+]
