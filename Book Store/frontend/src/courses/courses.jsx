@@ -15,7 +15,7 @@ function AllCourses() {
                     <h1 className="mt-16 font-semibold text-2xl md:text-4xl ">We're delight to have you <span className="text-pink-500">here! :)</span></h1>
                     <p className="mt-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam aspernatur error reiciendis aperiam, neque aut nulla tenetur. Necessitatibus natus rerum iusto nulla exercitationem voluptate provident velit. Voluptatem, quis voluptatum.</p>
 
-                    <div className="mt-12 rounded-md grid grid-cols-1 md:grid-cols-3">
+                    <div className="mt-12 rounded-md grid grid-cols-1 md:grid-cols-4">
 
                         {data.map((item) => (
                             <Cards item={item} key={item.id} />

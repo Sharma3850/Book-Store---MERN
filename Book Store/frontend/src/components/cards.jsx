@@ -5,8 +5,8 @@ function Cards({item}) {
     
     return (
         <>
-            <div className="mt-4 py-2">
-                <div className="card bg-base-100 w-96 shadow-xl hover:scale-105 duration-200">
+            <div className="mt-0">
+                <div className="card bg-base-100 w-45 shadow-xl scale-90 hover:scale-95 duration-200 dark:bg-slate-900 dark:text-white dark:border">
                     <figure>
                         <img
                             src={item.image}

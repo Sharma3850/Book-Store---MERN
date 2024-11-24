@@ -1,6 +1,21 @@
 import React, { useEffect, useState } from "react";
+import Login from "./login";
 
 function Navbar() {
+    const [theme, setTheme] = useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
+    const element = document.documentElement;
+    useEffect(() => {
+        if(theme === "dark"){
+            element.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+            document.body.classList.add("dark");
+        }
+        else{
+            element.classList.remove("dark");
+            localStorage.setItem("theme","light");
+            document.body.classList.remove("dark");
+        }
+    }, [theme])
 
     const [sticky, setStickey] = useState(false)
     useEffect( () => {
@@ -21,12 +36,13 @@ function Navbar() {
     const navItems = (<>
         <li><a href="/">Home</a></li>
         <li><a href="/courses">Courses</a></li>
-        <li><a>Contact</a></li>
-        <li><a>About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/aboutus">About Us</a></li>
     </>)
+
     return (
         <>
-            <div className={` max-w-screen-2xl container mx-auto md:px-20 px-4 fixed z-10 ${sticky ? "sticky-nav shadow-md bg-base-200 duration-300 transition-all ease-in-out" : ""}`}>
+            <div className={` max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed z-10 ${sticky ? "sticky-nav shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out" : ""}`}>
                 <div className="navbar ">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -61,7 +77,7 @@ function Navbar() {
 
                         <div className="hidden md:block">
                             <label className="px-3 py-2 border rounded-md flex items-center gap-2">
-                                <input type="text" className="grow outline-none" placeholder="Search" />
+                                <input type="text" className="grow outline-none dark:bg-slate-900 dark:text-white" placeholder="Search" />
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 16 16"
@@ -83,6 +99,7 @@ function Navbar() {
                                 {/* sun icon */}
                                 <svg
                                     className="swap-off h-7 w-7 fill-current"
+                                    onClick={() => setTheme(theme === "light"?"dark":"light")}
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24">
                                     <path
@@ -92,6 +109,7 @@ function Navbar() {
                                 {/* moon icon */}
                                 <svg
                                     className="swap-on h-7 w-7 fill-current"
+                                    onClick={() => setTheme(theme === "dark"?"light":"dark")}
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24">
                                     <path
@@ -101,7 +119,9 @@ function Navbar() {
                         </div>
 
                         <div>
-                        <a className="btn bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 cursor-pointer">Login</a>
+                        <a className="btn bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 cursor-pointer"
+                        onClick={()=>document.getElementById('my_modal_3').showModal()}>Login</a>
+                        <Login />
                         </div>
 
                     </div>
